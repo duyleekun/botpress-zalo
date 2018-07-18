@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Zalo channel for botpress",
   "main": "bin/node.bundle.js",
+  "homepage": "https://github.com/duyleekun/botpress-zalo",
   "botpress": {
     "menuText": "botpress-zalo",
     "menuIcon": "view_module",
@@ -12,6 +13,11 @@
       "stretched": false
     }
   },
+  "keywords": [
+    "zalo",
+    "botpress",
+    "botpress-connector"
+  ],
   "scripts": {
     "test": "npm run lint && npm run mocha",
     "mocha": "NODE_ENV=test mocha --require babel-register --recursive",
