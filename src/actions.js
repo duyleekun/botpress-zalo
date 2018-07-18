@@ -28,6 +28,7 @@ export function createText(userId, text) {
     platform: 'zalo',
     text,
     type: 'text',
-    raw: {userId, text}
+    raw: {userId, text},
+    user: {id: userId}
   })
 }

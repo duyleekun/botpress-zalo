@@ -16,9 +16,10 @@ const handlePromise = (next, promise) => {
 }
 
 const handleText = (event, next, zalo) => {
+  console.dir(event)
   return handlePromise(
     next,
-    zalo.getClient().api('sendmessage/text', 'POST', {uid: sanitizeUserId(event.raw.userId), message: event.text})
+    zalo.getClient().api('sendmessage/text', 'POST', {uid: sanitizeUserId(event.user.id), message: event.text})
   )
 }
 
